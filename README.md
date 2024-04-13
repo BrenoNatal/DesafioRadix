@@ -72,13 +72,12 @@ Podemos configura as variaveis do ambiente acessando o arquivo .env.
 ### Rodar o front
 ``` bash
 cd front
-npm install
 npm run dev
 ```
 
 ## Rotas da API
 ```
-  post: http://localhost:3333/event
+post: http://localhost:3333/event
 ```
 Cria um evento com base nos parâmetros passados no body da requisição:
 
@@ -93,18 +92,18 @@ Cria os eventos com base no arquivo csv enviado na requisição.
 ```
 get: http://localhost:3333/event/:days
 ```
-Retorna o valor médio registrado de cada equipamento como base no parâmetro days.
+Retorna o valor médio registrado de cada equipamento com base no parâmetro days passado na url.
 
 ```
 post: http://localhost:3333/equipment
 ```
-Cria um equipamento com parâmetros no body da requisição
+Cria um equipamento com base no parâmetro passado no body da requisição.
 - equipmentId:string
 
 ```
 post: http://localhost:3333/equipment
 ```
-Cria os equipamento com base no arquivo csv enviado na requisição
+Cria os equipamento com base no arquivo csv enviado na requisição.
 
 
 ## Autores
